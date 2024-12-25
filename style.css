@@ -1,0 +1,341 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#131010;
+    color: #D8C4B6;
+}
+#header{
+   
+    width: 100%;
+    height:500px;
+    background-image: url(img.jpg);
+    background-size: contain;
+    background-position: 90% calc(100px + 10%);
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    
+}
+.container{
+    padding: 10px 10%;
+}
+.text-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+h1{
+    font-weight:bold;
+    font-style:italic;
+    font-size: 66px;
+    color:rgb(240, 18, 114);
+}
+.text-content ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.text-content ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+.text-content ul li a::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: burlywood;
+    position: absolute;
+    left: 0;
+    bottom:-6px;
+}
+.text{
+    margin-top: 22%;
+    font-size: 30px;
+}
+.text h1 span{
+    color: whitesmoke;
+}
+/*About me*/
+.about{
+    margin-top: 125px;
+    padding: 50px;
+    color: aliceblue;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about1{
+    flex-basis: 35%;
+}
+.about1 img{
+    width:100%;
+}
+.about2{
+    flex-basis:60% ;
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: bold;
+    padding: 10px;
+}
+.about2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about2 li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #fff0dc;
+}
+
+.about2 ol {
+    margin-left: 20px;
+    font-size: 1rem;
+    color: #fff0dc;
+}
+
+.about2 ol li {
+    margin-bottom: 5px;
+}
+
+
+.about2 a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about2 a:hover {
+    text-decoration: underline;
+}
+/*Skills*/
+.skills{
+    margin-top: 125px;
+    padding: 50px;
+    color: aliceblue;
+}
+.skill-image {
+    width: 100px;
+    height: auto;
+}
+
+.rowS{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.aboutS2{
+    flex-basis: 35%;
+}
+.aboutS2 img{
+    width:80%;
+}
+.aboutS1{
+    flex-basis:60% ;
+    margin-left: 60px;
+}
+.subtitleS{
+    font-size: 60px;
+    font-weight: bold;
+   
+}
+.tab-titles{
+    display: flex;
+    margin:20px 0 40px;
+}
+.tab-links{
+    margin-right:50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height:3px;
+    background:peru;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition:0.8s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-content ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-content ul li span{
+    color: #fff0dc;
+    font-size: 25px;
+}
+.tab-content{
+    display: none; /*makes the content hidden*/
+}
+.tab-content.active-tab{
+    display: block;
+}
+/*My Project*/
+#myproject{
+    margin-top: 125px;
+    padding: 30px 0;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: bold;
+}
+.projectlist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+    padding: 30px;
+    color: black;
+}
+.projectlist h2{
+    font-size: 20px;
+    color: black;
+    font-style: oblique;
+    text-decoration: underline;
+}
+.projectlist a{
+    color: red;
+    font-size: 20px;
+}
+.projectlist div{
+    background: #D8C4B6;
+    padding: 40px;
+    font-size: 13px;
+    border-radius: 10px;
+    -webkit-transition: background 0.5s, transform 0.5s;
+    -moz-transition: background 0.5s, transform 0.5s;
+    transition: background 0.5s, transform 0.5s;
+}
+.projectlist div:hover {
+    background:pink;
+    transform: scale(1.1); /* Adds a scaling effect on hover */
+}
+/*Education*/
+#education{
+    margin-top: 125px;
+    padding: 30px 0;
+}
+.sub-titleE{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding: 40px;
+}
+.educationlist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+    padding: 30px;
+    color: black;
+}
+.educationlist h3{
+    font-size: 20px;
+    color: black;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.educationlist div{
+    background: #D8C4B6;
+    padding: 40px;
+    font-size: 13px;
+    border-radius: 10px;
+    -webkit-transition: background 0.5s, transform 0.5s;
+    -moz-transition: background 0.5s, transform 0.5s;
+    transition: background 0.5s, transform 0.5s;
+}
+.educationlist div:hover {
+    background:plum;
+    transform: scale(1.1); /* Adds a scaling effect on hover */
+}
+/*Contact Me Section*/
+#cot {
+    margin-top: 125px;
+    padding: 50px;
+    color: aliceblue;
+
+}
+.rowC{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.subtitleC{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding: 40px;
+    margin-left: 60px;
+
+}
+.aboutC1{
+    flex-basis:60%;
+    margin-left: 60px;
+   padding: 20px;
+    border-radius: 2px;
+}
+
+.aboutC1 p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+.aboutC1 form{
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutC1 input, .aboutC1 textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color:#f9f7f3;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.aboutC2{
+    flex-basis: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.aboutC2 img{
+    width:60%;
+} 
+footer {
+    background-color: #333;
+    color: #f9f7f3;
+    text-align: center;
+    padding: 20px 0;
+}
+
+

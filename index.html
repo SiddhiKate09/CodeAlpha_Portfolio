@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>My Portfolio</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="text-content">
+                
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+            </div>
+            <div class="text">
+                <p>Web Developer</p>
+                <h1>Hi,I'm <span>Siddhi</span></h1>
+            </div>
+        </div>
+    </div>
+    <!--About Me-->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about1">
+                    <img src="aboutme.avif" >
+                </div>
+                <div class="about2">
+                    <h2 class="subtitle">About Me</h2>
+                    <ul>
+                        <li>Hi, I'm Siddhi, a dedicated web developer with a passion for crafting responsive and user-centric websites.</li>
+                        <li>With expertise in both front-end and back-end development, I thrive on turning creative ideas into fully functional, visually appealing websites.</li>
+                        <li>I’m always eager to learn new technologies and bring innovative solutions to the digital world.</li>
+                        <li>I specialize in both front-end and back-end development, with expertise in technologies such as:
+                            <ol>
+                            <li>HTML, CSS, JavaScript, React, Node.js, PHP, and more</li>
+                            <li>Responsive web design</li>
+                            <li>E-commerce solutions</li>
+                            <li>SEO optimization</li>
+                            <li>Web app development </li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <br>
+                    <p>Connect with me on <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> or check out my <a href="https://github.com" target="_blank">GitHub</a> account.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Skills-->
+    <div class="skills">
+        <div class="containerFS">
+            <div class="rowS">
+                <div class="aboutS1">
+                    <h2 class="subtitleS">Skills</h2>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('frontend')">Frontend</p>
+                        <p class="tab-links" onclick="opentab('backend')">Backend</p>
+                        <p class="tab-links" onclick="opentab('database')">Database</p>
+                    </div>
+                    <div class="tab-content active-tab" id="frontend">
+                        <ul>
+                            <li><span>HTML</span><br>Structure Web Page and there Content</li>
+                            <li><span>CSS</span><br>To describe presentation of a HTML</li>
+                            <li><span>JavaScript</span><br>To create interactive web pages</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="backend">  <!--Backend-->
+                        <ul>
+                            <li><span>PHP</span><br>Can generate dynamic page content</li>
+                            <li><span>Node JS</span><br>Open source JavaScript runtime environment</li>
+                            <li><span>C++</span><br>Create High Performance Web Pages</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="database">  <!--Database-->
+                        <ul>
+                            <li><span>SQL</span><br>To manage database in relational database management</li>
+                            <li><span>mongodb</span><br>No sql data product</li>
+                            <li><span>My Sql</span><br>Used in RDBMS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="aboutS2">
+                    <img src="skills.jpg" >
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MY PROJECT-->
+    <div id="myproject">
+        <div class="container">
+            <h2 class="sub-title">My Projects</h2>
+            <div class="projectlist">
+                <div>
+                    <h2>Scientific Calculator</h2><br>
+                    <p>I’ve created a scientific calculator using HTML, CSS, and JavaScript that performs basic arithmetic operations 
+                        like addition, subtraction, multiplication, and division. Additionally, it handles trigonometric calculations (such as sine, cosine, and tangent), 
+                        as well as inverse trigonometric functions (arcsin, arccos, arctan). The calculator also includes a feature to convert values from degrees to radians, making it suitable for both basic and scientific mathematical tasks.</p>
+                    <br><a href="#">View Calculator</a>
+                </div>
+                <div>
+                    <h2>Image gallery</h2><br>
+                    <p>I’ve created an image gallery using HTML, CSS, and JavaScript that allows users to view and upload images. The gallery provides an interactive interface where images can be displayed in a grid or carousel format, and users can easily upload new images, enhancing the overall experience. This functionality ensures a dynamic and engaging way to showcase and manage visual content.</p>
+                    <br><a href="#">View Image gallery</a>
+                </div>
+                <div>
+                    <h2>Fashion websites</h2><br>
+                    <p>I’ve developed a fashion website using HTML, CSS, PHP, and PHPMyAdmin, where vendors can upload their products, manage inventory, and showcase their items to a wide audience. Customers can browse and view products, providing a seamless shopping experience. The integration of PHP and a database through PHPMyAdmin ensures efficient product management and user interaction, making the platform both functional and user-friendly for both vendors and customers.</p>
+                    <br><a href="#">View Fashion websites</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Education-->
+<div id="education">
+    <div class="container">
+        <h2 class="sub-titleE"> Education</h2>
+        <div class="educationlist">
+            <div>
+                <h3>10th Grade</h3>
+                <p><strong>Board:</strong> Maharashtra State Board</p>
+                <p><strong>Year:</strong> 2020</p>
+                <p><strong>Grade:</strong> A+</p>
+            </div>
+            <div>
+                <h3>12th Grade</h3>
+                <p><strong>Board:</strong> Maharashtra State Board</p>
+                <p><strong>Year:</strong> 2022</p>
+                <p><strong>Grade:</strong> A</p>
+            </div>
+            <div>
+                <h3>BE in Computer Engineering</h3>
+                <p><strong>University:</strong> SPPU University</p>
+                <p><strong>Year:</strong> 2026</p>
+                <p><strong>Specialization:</strong> Software Engineering</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Contact Me Section-->
+<div class="cot">
+    <div class="containerCS">
+        <h2 class="subtitleC">Contact Me</h2>
+        <div class="rowC">
+           
+            <div class="aboutC1">
+
+               
+                <p>Feel free to get in touch!</p>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required><br>
+                    <input type="email" name="email" placeholder="Your Email" required><br>
+                    <textarea name="message" placeholder="Your Message" required></textarea><br>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+            <div class="aboutC2">
+                <img src="contactme.jpg" >
+            </div>
+        </div>   
+
+    </div>
+
+</div>
+
+<footer>
+    <div class="container">
+        <p>My Portfolio Website</p>
+    </div>
+</footer>
+
+
+
+<!--Script-->
+    <script>
+        var tlinks=document.getElementsByClassName("tab-links");
+        var tconts=document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tlink of tlinks){
+                tlink.classList.remove("active-link");
+            }
+            for(tcont of tconts){
+                tcont.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+</body>
+</html>
